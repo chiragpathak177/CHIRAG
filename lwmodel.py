@@ -1,7 +1,7 @@
 from sklearn.linear_model import LinearRegression
 import pandas
 model=LinearRegression()
-box=pandas.read_csv('data.csv')
+box=pandas.read_csv('marks1.csv')
 x=box['hrs'].values.reshape(6,1)
 y=box['marks']
 model.fit(x,y)
